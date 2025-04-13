@@ -2,7 +2,7 @@
 
 ## Description
 
-This project explores the use of small, optimized language models to automatically generate documentation from COBOL code. **En particulier, nous optons pour la spécialisation de petits modèles de langage pour COBOL, ce qui permet d'obtenir des performances optimales tout en restant léger et accessible.** Although COBOL is an older language, it remains a cornerstone in legacy systems, especially in the banking sector. However, accompanying documentation is often scarce or missing. This notebook offers a lightweight and effective solution to bridge that gap, designed for resource-constrained environments where these systems are still in operation.
+This project explores the use of small, optimized language models to automatically generate documentation from COBOL code. **In particular, we choose to specialize small language models for COBOL, which allows for optimal performance while remaining lightweight and accessible.** Although COBOL is an older language, it remains a cornerstone in legacy systems, especially in the banking sector. However, accompanying documentation is often scarce or missing. This notebook offers a lightweight and effective solution to bridge that gap, designed for resource-constrained environments where these systems are still in operation.
 
 ## Context and Motivation
 
@@ -52,4 +52,3 @@ The performance of the specialized models is evaluated using various metrics, an
 
 ![COBOL Curves](cobol_curves.png)
 
-These curves demonstrate the model's ability to generate accurate documentation while maintaining efficiency in resource-constrained environments.
