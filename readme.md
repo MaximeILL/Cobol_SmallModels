@@ -10,28 +10,27 @@ Developed in the 1950s, COBOL is still used in many critical systems, particular
 
 ## Objectives
 
-- Test optimized language models for generating documentation from COBOL code.
+- Efficient batch inference with vLLM to generate synthetic documentations from COBOL code.
 - Develop a lightweight solution compatible with resource-limited environments.
 - Evaluate the quality of the generated documentation compared to real examples.
 
 ## Prerequisites
 
 To run this notebook, you will need the following:
+- **A100 40GB GPU** 
 - **Python**: Version 3.7 or higher.
 - **Python Libraries**:
   - `transformers`
   - `datasets`
   - `torch`
-  - `numpy`
-  - `pandas`
 - **Data**: A JSON file (`data.json`) containing COBOL code/documentation pairs. This dataset is semi-synthetic, blending real-world examples with synthetically generated data to address the scarcity of COBOL documentation and enhance model training.
 - **Environment**: Jupyter Notebook or a compatible IDE (e.g., VS Code with the Jupyter extension).
 
 ### Semi-Synthetic Dataset Creation
 
 Due to the limited availability of COBOL code-documentation pairs, a semi-synthetic dataset was developed:
-- **Real Data**: Sourced from existing COBOL codebases and their documentation, where available.
-- **Synthetic Data**: Created by modifying real code snippets (e.g., renaming variables, altering control flows) and generating corresponding documentation using rule-based templates or augmentation techniques.
+- **Real Data**: Sourced from existing COBOL.
+- **Synthetic Data**: Efficient batch inference using vLLM.
 - **Purpose**: This approach expands the dataset’s size and variety, enabling the model to better generalize across diverse COBOL structures while remaining applicable to real-world use cases.
 
 This semi-synthetic dataset is a cornerstone of the project, overcoming the challenge of data scarcity and ensuring robust model performance.
